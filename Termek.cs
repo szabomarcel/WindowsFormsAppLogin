@@ -24,5 +24,11 @@ namespace WindowsFormsAppLogin
         {
             return $"{termeknev} ({db} db)";
         }
+        public class Megrendeles
+        {
+            public int MegrendelesiSzam { get; set; }
+            public string TermekNev { get; set; }
+            public int EladottMennyiseg { get; set; }
+        }
     }
 }
