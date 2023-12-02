@@ -22,9 +22,10 @@ namespace WindowsFormsAppLogin
         private void button1_Click(object sender, EventArgs e)
         {
             if (int.TryParse(megrendelesiSzamTextBox.Text, out int megrendelesiSzam) &&
-                !string.IsNullOrEmpty(termekNevTextBox.Text) &&
-                int.TryParse(eladottMennyisegTextBox.Text, out int eladottMennyiseg))
+            !string.IsNullOrEmpty(termekNevTextBox.Text) &&
+            int.TryParse(eladottMennyisegTextBox.Text, out int eladottMennyiseg))
             {
+                Program.command.CommandText = "SELECT `termekid`,`termeknev`,`ar`,`db` FROM `termek` WHERE 1 ORDER BY termeknev";
                 Megrendeles megrendeles = new Megrendeles
                 {
                     MegrendelesiSzam = megrendelesiSzam,

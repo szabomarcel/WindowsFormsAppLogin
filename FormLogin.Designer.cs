@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button button_login;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_nev = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_jelszo = new System.Windows.Forms.TextBox();
-            this.button_login = new System.Windows.Forms.Button();
+            button_login = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,13 +74,17 @@
             // 
             // button_login
             // 
-            this.button_login.Location = new System.Drawing.Point(25, 263);
-            this.button_login.Name = "button_login";
-            this.button_login.Size = new System.Drawing.Size(377, 41);
-            this.button_login.TabIndex = 4;
-            this.button_login.Text = "Belépés";
-            this.button_login.UseVisualStyleBackColor = true;
-            this.button_login.Click += new System.EventHandler(this.button_login_Click);
+            button_login.BackColor = System.Drawing.Color.Tomato;
+            button_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            button_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            button_login.ForeColor = System.Drawing.Color.DarkBlue;
+            button_login.Location = new System.Drawing.Point(25, 263);
+            button_login.Name = "button_login";
+            button_login.Size = new System.Drawing.Size(377, 41);
+            button_login.TabIndex = 4;
+            button_login.Text = "Belépés";
+            button_login.UseVisualStyleBackColor = false;
+            button_login.Click += new System.EventHandler(this.button_login_Click);
             // 
             // FormLogin
             // 
@@ -88,7 +93,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(431, 352);
-            this.Controls.Add(this.button_login);
+            this.Controls.Add(button_login);
             this.Controls.Add(this.textBox_jelszo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_nev);
@@ -111,7 +116,6 @@
         private System.Windows.Forms.TextBox textBox_nev;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox_jelszo;
-        private System.Windows.Forms.Button button_login;
     }
 }
 

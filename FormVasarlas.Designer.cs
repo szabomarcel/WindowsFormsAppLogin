@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVasarlas));
             this.listBoxTermekek = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listBox_kosar = new System.Windows.Forms.ListBox();
             this.button_vasarlas = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_termekid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox_kosar = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_vasaroltDarab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_ar)).BeginInit();
@@ -84,9 +84,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kiválasztott termék";
             // 
+            // listBox_kosar
+            // 
+            this.listBox_kosar.FormattingEnabled = true;
+            this.listBox_kosar.Location = new System.Drawing.Point(230, 19);
+            this.listBox_kosar.Name = "listBox_kosar";
+            this.listBox_kosar.Size = new System.Drawing.Size(121, 173);
+            this.listBox_kosar.TabIndex = 9;
+            // 
             // button_vasarlas
             // 
             this.button_vasarlas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button_vasarlas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_vasarlas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_vasarlas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_vasarlas.Image = global::WindowsFormsAppLogin.Properties.Resources.Fasticon_Shop_Cart_Shop_cart_24;
@@ -222,14 +231,6 @@
             this.label1.Size = new System.Drawing.Size(105, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Termék azonosító";
-            // 
-            // listBox_kosar
-            // 
-            this.listBox_kosar.FormattingEnabled = true;
-            this.listBox_kosar.Location = new System.Drawing.Point(230, 19);
-            this.listBox_kosar.Name = "listBox_kosar";
-            this.listBox_kosar.Size = new System.Drawing.Size(121, 173);
-            this.listBox_kosar.TabIndex = 9;
             // 
             // FormVasarlas
             // 
